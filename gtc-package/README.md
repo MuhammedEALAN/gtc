@@ -9,11 +9,11 @@ A CLI tool to count tokens in files using OpenAI's tiktoken library.
 ## Installation
 
 ```bash
-# Install globally with pip (recommended)
-pip install --user .
+# Install globally with uv (recommended)
+uv tool install .
 
-# Or install with uv (requires --system flag)
-uv pip install --system .
+# Or install with pip
+pip install --user .
 
 # Or install in editable mode for development
 pip install -e .
