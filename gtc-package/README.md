@@ -1,5 +1,9 @@
 # GTC - GPT Token Counter
 
+<a href="https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22gtc%22%2C%22command%22%3A%22gtc-mcp%22%7D">
+  <img src="https://img.shields.io/badge/VS_Code-Install_MCP_Server-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white" alt="Install in VS Code">
+</a>
+
 A CLI tool to count tokens in files using OpenAI's tiktoken library.
 
 ## Installation
@@ -13,6 +17,21 @@ uv pip install .
 
 # Or install in editable mode for development
 pip install -e .
+```
+
+## MCP Server
+
+GTC can be used as an MCP (Model Context Protocol) server. After installation, add it to your MCP configuration:
+
+```json
+{
+  "servers": {
+    "gtc": {
+      "command": "gtc-mcp",
+      "args": []
+    }
+  }
+}
 ```
 
 ## Usage
